@@ -1,0 +1,25 @@
+package ex04;
+
+public class MiddleBlock {
+
+	public static void main(String[] args) {
+		int n = 100;
+		n = 200;
+		
+		{
+			int num = 10;
+			System.out.println(num);
+		}
+		
+		{
+			int num2 = 20;
+			System.out.println(num2);
+		}
+		
+		{
+			int num3 = 30;
+			System.out.println(num3);
+		}
+	}
+
+}
