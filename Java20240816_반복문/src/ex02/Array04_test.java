@@ -79,7 +79,8 @@ public class Array04_test {
 		for(int i=0; i<5; i++) {
 			System.out.print(coms[i] + ", ");			
 		}		
-		System.out.println("\n----------------");	
+		System.out.println("\n----------------");
+		sc.close();
 	}
 
 }
