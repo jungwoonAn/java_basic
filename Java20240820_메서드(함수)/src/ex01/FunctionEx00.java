@@ -19,6 +19,8 @@ public class FunctionEx00 {
 		int age = sc.nextInt();
 		System.out.println(name);
 		System.out.println(age);
+		
+		sc.close();
 	}
 
 }

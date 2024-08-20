@@ -1,8 +1,6 @@
 package ex01;
 
-import java.util.Scanner;
-
-public class FunctionEx04 {
+public class FunctionEx03 {
 
 	public static void main(String[] args) {
 		int result = func3(7);  // 함수 호출	
@@ -14,7 +12,7 @@ public class FunctionEx04 {
 		}
 	}
 	
-	// 반환타입 X, 입력값(매개변수) O
+	// 반환타입 O, 입력값(매개변수) O
 	static int func3(int num) {
 		if(num%2 == 0) {
 			return 0;  // 짝수

@@ -1,7 +1,5 @@
 package ex01;
 
-import java.util.Scanner;
-
 public class FunctionEx01 {
 
 	public static void main(String[] args) {
