@@ -8,4 +8,5 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ex02.Student"/>
+    <fullyQualifiedTypeName name="ref.ex.ProductOrder"/>
 </qualifiedTypeNameHistroy>
