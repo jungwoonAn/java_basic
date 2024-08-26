@@ -1,0 +1,28 @@
+package ex03;
+
+public class LgTV implements TV {
+   boolean power;
+   int sound;
+     
+   @Override
+   public void powerOn() {
+      this.power = true;
+   }
+   
+   @Override
+   public void powerOff() {
+      this.power = false;
+   }
+   
+   @Override
+   public void soundUp() {
+      this.sound += 1;
+   }
+   
+   @Override
+   public void soundDown() {
+      this.sound -= 1;   
+      if(sound < 0)
+         sound = 0;
+   }
+}
