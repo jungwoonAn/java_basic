@@ -10,4 +10,13 @@
     <fullyQualifiedTypeName name="ex02.Student"/>
     <fullyQualifiedTypeName name="ref.ex.ProductOrder"/>
     <fullyQualifiedTypeName name="ex04.PartTimeStudent"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="extends1.ex3.HydrogenCar"/>
+    <fullyQualifiedTypeName name="extends1.ex.Album"/>
+    <fullyQualifiedTypeName name="extends2.access.parent.Parent"/>
+    <fullyQualifiedTypeName name="ex01.SamsungTV"/>
+    <fullyQualifiedTypeName name="exam01.CreditCardPayment"/>
+    <fullyQualifiedTypeName name="exam01.PayPalPayment"/>
+    <fullyQualifiedTypeName name="exam01.Payment"/>
+    <fullyQualifiedTypeName name="exam01.CashPayment"/>
 </qualifiedTypeNameHistroy>
