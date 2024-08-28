@@ -19,4 +19,5 @@
     <fullyQualifiedTypeName name="exam01.PayPalPayment"/>
     <fullyQualifiedTypeName name="exam01.Payment"/>
     <fullyQualifiedTypeName name="exam01.CashPayment"/>
+    <fullyQualifiedTypeName name="oop_exam2.Secretary"/>
 </qualifiedTypeNameHistroy>
