@@ -26,4 +26,15 @@
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="oop_exam2_1.Airplane"/>
+    <fullyQualifiedTypeName name="ex01.OrangeBox"/>
+    <fullyQualifiedTypeName name="ex01.Orange"/>
+    <fullyQualifiedTypeName name="ex04.Product"/>
+    <fullyQualifiedTypeName name="ex05.Box"/>
+    <fullyQualifiedTypeName name="ex07.Box"/>
+    <fullyQualifiedTypeName name="ex08.Box"/>
+    <fullyQualifiedTypeName name="ex10.Box"/>
+    <fullyQualifiedTypeName name="ex12.BoxFactory"/>
+    <fullyQualifiedTypeName name="ex13.BoxFactory"/>
+    <fullyQualifiedTypeName name="generic.test.ex01.Container"/>
+    <fullyQualifiedTypeName name="generic.test.ex2.Pair"/>
 </qualifiedTypeNameHistroy>
