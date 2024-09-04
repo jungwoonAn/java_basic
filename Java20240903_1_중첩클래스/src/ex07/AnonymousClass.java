@@ -32,6 +32,14 @@ class Papers {
 		};
 		
 		return p;
+
+		// 다음 단계.. 변수 p대신 바로 Printable 구현 객체 return
+//		return new Printable() {  
+//			@Override
+//			public void print() {
+//				System.out.println(message);
+//			}
+//		};
 	}
 	
 }

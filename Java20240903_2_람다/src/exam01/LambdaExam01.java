@@ -23,7 +23,7 @@ public class LambdaExam01 {
 		
 		//square()
 		Function<Integer, Integer> square = x -> x*x;
-		System.out.println("사각형 넓이 :" + square.apply(10));
+		System.out.println("사각형 넓이 : " + square.apply(10));
 		
 		// roll()
 		Supplier<Integer> roll = () -> (int)(Math.random()*6);
