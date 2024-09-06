@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="exam01.PayPalPayment"/>
-    <fullyQualifiedTypeName name="exam01.Payment"/>
-    <fullyQualifiedTypeName name="exam01.CashPayment"/>
-    <fullyQualifiedTypeName name="oop_exam2.Secretary"/>
-    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="ex03.StringTokenMain"/>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-    <fullyQualifiedTypeName name="oop_exam2_1.Airplane"/>
-    <fullyQualifiedTypeName name="ex01.OrangeBox"/>
-    <fullyQualifiedTypeName name="ex01.Orange"/>
-    <fullyQualifiedTypeName name="ex04.Product"/>
-    <fullyQualifiedTypeName name="ex05.Box"/>
-    <fullyQualifiedTypeName name="ex07.Box"/>
-    <fullyQualifiedTypeName name="ex08.Box"/>
-    <fullyQualifiedTypeName name="ex10.Box"/>
     <fullyQualifiedTypeName name="ex12.BoxFactory"/>
     <fullyQualifiedTypeName name="ex13.BoxFactory"/>
     <fullyQualifiedTypeName name="generic.test.ex01.Container"/>
@@ -60,4 +44,20 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="ex02.Counter"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="thread.start.HelloRunnable"/>
+    <fullyQualifiedTypeName name="thread.start.test.StartTestMain01.CounterThread"/>
+    <fullyQualifiedTypeName name="thread.start.test.StartTestMain02.CounterRunnable"/>
+    <fullyQualifiedTypeName name="thread.start.test.StartTestMain05.PrintThread"/>
+    <fullyQualifiedTypeName name="java.beans.IntrospectionException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="thread.control.join.JoinMain01.SumTask"/>
+    <fullyQualifiedTypeName name="util.MyLogger"/>
+    <fullyQualifiedTypeName name="util.ThreadUtils"/>
+    <fullyQualifiedTypeName name="thread.sync.BankAccount"/>
 </qualifiedTypeNameHistroy>

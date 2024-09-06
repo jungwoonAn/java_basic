@@ -1,7 +1,5 @@
 package ex08;
 
-import java.util.function.BiFunction;
-
 // 숫자 3개 전달하면 문자열 결합하여 반환
 @FunctionalInterface
 interface TriFunction<T,U,V,R>{
