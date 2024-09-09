@@ -47,7 +47,40 @@ public class Movie {
 		return genre;
 	}
 	
-	// 영화목록 파일 불러오기
+	@Override
+	public String toString() {
+		return String.format("[%s]:%s(%s)\n", movieCode, title, genre);
+	}
+	
+	// 영화예매시 영화 코드에 해당하는 영화 찾기
+	public static Movie findAll(String movieCode) {
+		Movie movie = null;
+		BufferedReader br = null;
+		String line = null;
+		
+		try {
+			br = new BufferedReader(new FileReader(file));
+			
+			while((line=br.readLine()) != null) {
+				String[] tmp = line.split(",");
+				if(movieCode.equals(tmp[0])) {
+					movie = new Movie(Long.parseLong(tmp[0]), tmp[1], tmp[2]);
+					break;
+				}			
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		return movie;
+	}
+	
+	// 1-1)영화목록 파일 불러오기
 	public static ArrayList<Movie> findAll() throws IOException{
 		ArrayList<Movie> movies = new ArrayList<Movie>();
 		BufferedReader br = null;
@@ -73,7 +106,7 @@ public class Movie {
 		return movies;
 	}
 	
-	// 영화 등록 리스트 파일에 추가
+	// 1-2)영화 등록 리스트 파일에 추가
 	public void save() throws IOException {
 //		FileWriter fw = new FileWriter(file);  // 파일에 덮어쓰기
 		FileWriter fw = new FileWriter(file, true);  // true -> append로 추가
@@ -86,10 +119,33 @@ public class Movie {
 	private String toFileString() {
 		return String.format("%d,%s,%s", movieCode, title, genre);
 	}
-
-	@Override
-	public String toString() {
-		return String.format("[%s]:%s(%s)\n", movieCode, title, genre);
-	}
 	
+	// 1-3)영화 삭제
+	public static void delete(String movieCode) {
+		BufferedReader br = null;
+		String text = "";
+		String line = "";
+		
+		try {
+			br = new BufferedReader(new FileReader(file));
+			
+			while((line=br.readLine()) != null) {
+				String[] temp = line.split(",");
+				if(movieCode.equals(temp[0])) {  // 삭제할 데이터
+					continue;  // text에 추가하지 않고 넘어감
+				}
+				text += line + "\n";  // 삭제되지 않은 줄은 text에 추가
+			}
+			br.close();
+			
+			FileWriter fw = new FileWriter(file);
+			fw.write(text);  // 파일에 text 덮어씀
+			
+			fw.close();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
 }

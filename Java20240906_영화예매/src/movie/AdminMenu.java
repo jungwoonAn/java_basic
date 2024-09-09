@@ -42,9 +42,9 @@ public class AdminMenu extends AbstractMenu {
 				return this;
 		}
 	}
-		
+	
 	// 영화목록 저장할 ArrayList
-	List<Movie> movies = new ArrayList<>();
+	List<Movie> movies = new ArrayList<>();	
 	
 	// 영화 등록하기
 	public void movieRegister() {		
@@ -65,8 +65,9 @@ public class AdminMenu extends AbstractMenu {
 		
 	// 영화 목록보기
 	public void movieList() {
-		try {
+		try {					
 			movies = Movie.findAll();
+			
 			if(movies.size() == 0) {
 				System.out.println("등록된 영화가 없습니다.");
 			}else {						
@@ -77,7 +78,7 @@ public class AdminMenu extends AbstractMenu {
 				}
 			}
 		}catch (Exception e) {
-				System.out.println("데이터 접근에 실패햐였습니다.");
+				System.out.println("데이터 접근에 실패하였습니다.");
 		}
 	}	
 	
@@ -86,19 +87,10 @@ public class AdminMenu extends AbstractMenu {
 		if(movies.size() == 0) {
 			System.out.println("삭제할 영화가 없습니다.");
 		}else {
-			movieList();
+			movieList();  // 영화 목록 출력하여 확인
 			System.out.printf("삭제할 영화를 선택하세요 : ");
-			String rm = sc.nextLine();
-			
-			// 삭제할 영화 목록
-			List<Movie> removed = new ArrayList<Movie>();
-//			for(Movie movie : movies) {		
-//				if(movie.getMovieCode().equals(rm)) {
-//					removed.add(movie);
-//					System.out.println(">> 삭제되었습니다.");
-//				}			
-//			}
-			movies.removeAll(removed);
+			Movie.delete(sc.nextLine());
+			System.out.println(">> 삭제되었습니다.");	
 		}
 	}
 
