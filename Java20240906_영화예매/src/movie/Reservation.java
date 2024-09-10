@@ -56,11 +56,10 @@ public class Reservation {
 				}
 			}
 			br.close();
-			return reservation;
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return null;
+		return reservation;
 	}
 
 	@Override
